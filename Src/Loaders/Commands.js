@@ -2,7 +2,7 @@ var fs = require("fs");
 const { commands, aliases } = require("../Collections/Collections")
 const categories = fs.readdirSync(`${__dirname}/../../Commands`);
 
-const CommandLoader = async() => {
+const CommandLoader = async () => {
 
     categories.forEach(category => {
         const files = fs.readdirSync(`${__dirname}/../../Commands/${category}`);

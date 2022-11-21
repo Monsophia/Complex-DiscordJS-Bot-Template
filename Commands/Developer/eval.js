@@ -3,7 +3,7 @@ const hastebin = require("hastebin-gen"); // May need updating to v2 of this NPM
 const conf = require("../../Settings/conf.json");
 
 const clean = (text) => {
-    if (typeof(text) === "string") {
+    if (typeof (text) === "string") {
         return text.replace(/`/g, '`' + String.fromCharCode(8203)).replace(/@/g, '@' + String.fromCharCode(8203))
     } else {
         return text

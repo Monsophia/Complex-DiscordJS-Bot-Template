@@ -1,20 +1,16 @@
-const {
-    cooldown,
-    commands,
-    aliases
-} = require("../Collections/Collections");
+const { cooldown, commands, aliases } = require("../Collections/Collections");
 const Discord = require("discord.js");
 const utils = require("./UtilsHandler");
 const prettyMilliseconds = require("pretty-ms");
 const conf = require("../../Settings/conf.json")
-    /**
-     * 
-     * @param {*} client Bot Client
-     * @param {*} message Message Event from the Events
-     * @param {*} args Arguments for each command (if required)
-     * @param {*} cmd Command 
-     */
-const Command = async(client, message, args, cmd) => {
+/**
+ * 
+ * @param {*} client Bot Client
+ * @param {*} message Message Event from the Events
+ * @param {*} args Arguments for each command (if required)
+ * @param {*} cmd Command 
+ */
+const Command = async (client, message, args, cmd) => {
 
     let command;
 

@@ -1,4 +1,4 @@
-let processHandler = function() {
+let processHandler = function () {
     process.on('unhandledRejection', (error) => {
         console.error("[UNHANDLED REJECTION] " + (error.stack == undefined ? error : error.stack));
     });

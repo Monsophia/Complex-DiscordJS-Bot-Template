@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const embed = new Discord.MessageEmbed();
-module.exports.error = function(message, errors, timeout) {
+module.exports.error = function (message, errors, timeout) {
     if (errors.length > 256) {
 
         embed.setColor(`RED`)
@@ -22,7 +22,7 @@ module.exports.error = function(message, errors, timeout) {
         }
     });
 };
-module.exports.buildEmbed = function(client, embedFieldData) {
+module.exports.buildEmbed = function (client, embedFieldData) {
 
     embed.setTimestamp()
         // TODO: Use branded color

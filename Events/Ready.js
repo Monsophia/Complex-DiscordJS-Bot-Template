@@ -4,7 +4,7 @@ let EventsReloader = require("../Src/Reloaders/EventsReloader");
 let ProcessHandler = require("../Src/Handlers/ProcessHandler");
 
 let conf = require("../Settings/conf.json")
-let Ready = async(client) => {
+let Ready = async (client) => {
     if (client.guilds.cache.size < 1) {
         client.generateInvite({
             permissions: conf.Discord.invite_link_perms,

@@ -5,7 +5,7 @@ const { commands, aliases } = require("../Collections/Collections")
 const categories = fs.readdirSync(`${__dirname}/../../Commands`);
 
 console.log(categories)
-const CommandReloader = async() => {
+const CommandReloader = async () => {
     categories.forEach(category => {
         chokidar.watch(`${__dirname}/../../Commands/${category}`, {
             awaitWriteFinish: true

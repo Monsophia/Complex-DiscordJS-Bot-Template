@@ -1,7 +1,7 @@
 const Command = require("../Src/Handlers/CommandHandler");
 const conf = require("../Settings/conf.json");
 
-const Message = async(client, message) => {
+const Message = async (client, message) => {
     if (message.author.bot) return;
     if (message.channel.type === "dm") return;
     if (message.content.indexOf(conf.Discord.prefix) !== 0) return;

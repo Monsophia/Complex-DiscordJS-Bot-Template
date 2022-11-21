@@ -3,7 +3,7 @@ const chokidar = require("chokidar");
 const { basename } = require("path");
 const event = fs.readdirSync(`${__dirname}/../../Events`);
 
-const EventsReloader = async(client) => {
+const EventsReloader = async (client) => {
     event.forEach(e => {
         chokidar.watch(`${__dirname}/../../Events/${e}`, {
             awaitWriteFinish: true
